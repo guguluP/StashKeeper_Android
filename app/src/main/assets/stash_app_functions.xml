@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Indexed by Android 17. Parameter names are query, name, quantity, and place. -->
+<appfunctions>
+    <appfunction>
+        <id>findItems</id>
+        <enabledByDefault>true</enabledByDefault>
+        <description>Search this household stash. Pass query as the words to match, such as a name, a place, or expired. Returns a short summary and one line per item. A quantity of zero is still in the stash until the person deletes it.</description>
+    </appfunction>
+    <appfunction>
+        <id>listExpiring</id>
+        <enabledByDefault>true</enabledByDefault>
+        <description>List items that are expired or inside the household warning window. Takes no parameters. Returns a short summary and one line per item.</description>
+    </appfunction>
+    <appfunction>
+        <id>addItem</id>
+        <enabledByDefault>true</enabledByDefault>
+        <description>Add one named item to the stash. name is required. quantity is optional, from 1 to 999, and defaults to 1. place is an optional place name. Nutrition is left blank. Returns a short confirmation.</description>
+    </appfunction>
+    <appfunction>
+        <id>shoppingList</id>
+        <enabledByDefault>true</enabledByDefault>
+        <description>Read the shopping list: items below their keep-at-least amount, plus names added by hand. Takes no parameters.</description>
+    </appfunction>
+    <appfunction>
+        <id>addShoppingItem</id>
+        <enabledByDefault>true</enabledByDefault>
+        <description>Add a name to the shopping list. name is required. Returns a short confirmation.</description>
+    </appfunction>
+</appfunctions>
